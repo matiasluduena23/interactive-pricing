@@ -21,7 +21,7 @@
   /* neutral */
   
   --Very-Pale-Blue: hsl(230, 100%, 99%);
-  --Light-Grayish-Blue: hsl(224, 65%, 95%);
+  --Light-Grayish-Blue-soft: hsl(224, 65%, 95%);
   --Light-Grayish-Blue : hsl(223, 50%, 87%);
   --Grayish-Blue: hsl(225, 20%, 60%);
   --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
@@ -34,9 +34,17 @@ body {
   font-size: 15px;
   font-weight: 600;
   line-height: 1.6;
- display: grid;
- align-items: center;
- min-height: 100vh;
+ 
+  min-height: 100vh;
+  background-image: url('../assets/bg-pattern.svg');
+  background-repeat: no-repeat;
+  
+}
+
+@media (min-width: 1300px) {
+  body {
+    background-size: contain;
+  }
 }
 
 a {

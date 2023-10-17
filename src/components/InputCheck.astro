@@ -1,0 +1,42 @@
+<input type="checkbox" name="check" id="check" />
+<label for="check"></label>
+
+<style>
+    input[type='checkbox'] {
+        position: absolute;
+        top: -9000px;
+        left: -9000px;
+    }
+
+    input[type='checkbox'] + label {
+        display: inline-block;
+        width: 50px;
+        height: 25px;
+        border-radius: 15px;
+        background-color: var(--Light-Grayish-Blue);
+        position: relative;
+        cursor: pointer;
+    }
+
+    input[type='checkbox'] + label::before {
+        content: '';
+        position: absolute;
+        left: 3.5px;
+        top: 0;
+        bottom: 0;
+        margin-block: auto;
+        background-color: var(--Very-Pale-Blue);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+    }
+
+    input[type='checkbox']:checked + label {
+        background-color: var(--cyan-dark-clr);
+    }
+
+    input[type='checkbox']:checked + label::before {
+        left: auto;
+        right: 3.5px;
+    }
+</style>
